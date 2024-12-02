@@ -2,6 +2,10 @@
 
 A Uniswap v4 Hook that implements dynamic liquidity management based on pool activity and social factors. This hook introduces the concept of "Rizz Factor" - a social scoring mechanism that influences liquidity positions based on trading activity and time-based factors. Deployed on Unichain, a Uniswap v4 focused L2 chain.
 
+## Contract Address: 0xa32862E752C9133E61FDBEC795dF19b1C2Bf1840
+
+## Unichain Sepolia Contract Explorer: https://unichain-sepolia.blockscout.com/address/0xa32862E752C9133E61FDBEC795dF19b1C2Bf1840
+
 ## Architecture 📐
 ![Architecture Diagram](./architecture.png)
 
