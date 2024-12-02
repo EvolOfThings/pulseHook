@@ -8,12 +8,6 @@ Pulse Hook is a dynamic liquidity management built on Unichain that automaticall
 
 ## Unichain Sepolia Contract Explorer: https://unichain-sepolia.blockscout.com/address/0xa32862E752C9133E61FDBEC795dF19b1C2Bf1840
 
-## Architecture 📐
-![Architecture Diagram](./architecture.png)
-
-## User Flow 🔄
-![User Flow Diagram](./userflow.png)
-
 ## Features 🚀
 
 1. Liquidity Fragmentation: By incentivizing concentrated liquidity in active trading ranges, it helps solve the problem of scattered liquidity across different price ranges.
@@ -27,8 +21,6 @@ Pulse Hook is a dynamic liquidity management built on Unichain that automaticall
 Each of these problems is significant in DeFi, and the project provides innovative solutions through its hook mechanism and incentive structure.
 
 
-  - -10% if negative interest and no volume increase
-
 ### Hook Implementation
 The hook implements the following Uniswap v4 callbacks:
 - `beforeAddLiquidity`: Checks position updates before adding liquidity within specified tick ranges
@@ -38,8 +30,6 @@ The hook implements the following Uniswap v4 callbacks:
 
 Each interaction triggers position updates and volume tracking within the specified tick ranges.
 
-## Roadmap 🚀
-![Roadmap](./roadmap.png)
 
 ## Uniswap Integration 🦄
 
@@ -64,6 +54,16 @@ PulseCheckLiquidityHook is specifically designed for Uniswap v4's hook system an
    - Encourages active participation in UniChain's liquidity markets
    - Creates a collaborative environment for liquidity providers
    - Builds community around effective market making
+
+
+## Architecture 📐
+![Architecture Diagram](./architecture.png)
+
+## User Flow 🔄
+![User Flow Diagram](./userflow.png)
+
+## Roadmap 🚀
+![Roadmap](./roadmap.png)
 
 ## Contributing 🤝
 
