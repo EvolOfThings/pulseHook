@@ -1,6 +1,8 @@
-# PulseCheckLiquidityHook 🌊
+# Pulse Hook 🌊
 
-A Uniswap v4 Hook that implements dynamic liquidity management based on pool activity and social factors. This hook introduces the concept of "Rizz Factor" - a social scoring mechanism that influences liquidity positions based on trading activity and time-based factors. Deployed on Unichain, a Uniswap v4 focused L2 chain.
+Pulse Hook is a dynamic liquidity management built on Unichain that automatically adjusts liquidity positions based on trading volume and social sentiment(impressions) called Rizz Factor. The Rizz Factor is an offchain data about a person, place or a thing. The user provides the liquidity position and specify the time duration for which the LP to be locked in. The Hook monitors the trading volume and Rizz Factor for the specified time duration and if the conditions are met, the LP is adjusted accordingly to increase or decrease the liquidity and thereby improving the capital efficiency and generating higher fees. 
+
+
 
 ## Contract Address: 0xa32862E752C9133E61FDBEC795dF19b1C2Bf1840
 
