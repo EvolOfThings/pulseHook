@@ -17,9 +17,7 @@ contract DeployPulseHookScript is Script, Constants {
         // hook contracts must have specific flags encoded in the address
         uint160 flags = uint160(
             Hooks.BEFORE_ADD_LIQUIDITY_FLAG | 
-            Hooks.AFTER_ADD_LIQUIDITY_FLAG | 
-            Hooks.BEFORE_REMOVE_LIQUIDITY_FLAG |
-            Hooks.AFTER_REMOVE_LIQUIDITY_FLAG |
+            Hooks.AFTER_INITIALIZE_FLAG |
             Hooks.BEFORE_SWAP_FLAG |
             Hooks.AFTER_SWAP_FLAG
         );

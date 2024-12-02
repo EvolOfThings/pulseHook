@@ -16,3 +16,6 @@ docs/
 
 # Node modules
 node_modules/
+
+v4-core/
+v4-periphery/
