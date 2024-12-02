@@ -16,36 +16,17 @@ Pulse Hook is a dynamic liquidity management built on Unichain that automaticall
 
 ## Features 🚀
 
-- **Dynamic Liquidity Adjustment**: Automatically adjusts liquidity positions based on:
-  - Daily trading volume
-  - Time-based "Rizz Factor"
-  - Pool activity metrics within specific price ranges (ticks)
+1. Liquidity Fragmentation: By incentivizing concentrated liquidity in active trading ranges, it helps solve the problem of scattered liquidity across different price ranges.
 
-- **Social Incentives**: 
-  - Rewards active liquidity providers with increased positions
-  - Penalizes inactive positions in low-volume periods
-  - Daily "Rizz Factor" updates
-  - Position tracking across price ranges (each tick represents a 0.01% price change)
+2. Passive Liquidity: Through the "Rizz Factor" and daily volume tracking, it encourages active liquidity management rather than passive "set and forget" positions.
 
-- **Position Tracking**:
-  - Detailed tracking of user LP positions with tick ranges
-  - Volume monitoring per pool
-  - Timestamp-based updates
+3. Social Coordination: The social incentives create better coordination between liquidity providers, leading to more effective market making.
 
-## How It Works 🔄
+4. Capital Efficiency: By tracking trading activity and incentivizing active management, it helps LPs optimize their capital allocation and avoid having funds locked in inactive ranges.
 
-### Price Ranges and Ticks
-- In Uniswap v4, liquidity is provided within specific price ranges
-- Each tick represents a 0.01% price change
-- Users specify their position's tick range (e.g., -60 to +60 ticks = approximately ±0.6% price range)
-- Smaller tick ranges concentrate liquidity but may require more frequent rebalancing
+Each of these problems is significant in DeFi, and the project provides innovative solutions through its hook mechanism and incentive structure.
 
-### Rizz Factor System
-- Fixed daily Rizz Factor (currently set to hardcoded value of 33)
-- Positions are updated every 24 hours (this can be adjusted in the future)
-- Rizz Factor is an indicator of the social activity of a liquidity provider
-- Liquidity adjustments:
-  - +10% if positive interest and increased volume
+
   - -10% if negative interest and no volume increase
 
 ### Hook Implementation
@@ -56,6 +37,33 @@ The hook implements the following Uniswap v4 callbacks:
 - `afterSwap`: Records volume data and updates Rizz Factor based on tick-range activity
 
 Each interaction triggers position updates and volume tracking within the specified tick ranges.
+
+## Roadmap 🚀
+![Roadmap](./roadmap.png)
+
+## Uniswap Integration 🦄
+
+PulseCheckLiquidityHook is specifically designed for Uniswap v4's hook system and aligns perfectly with the Unichain Developer Grants track by:
+
+1. **Leveraging v4 Hooks**: 
+   - Utilizes Uniswap v4's hook system to implement novel liquidity management strategies
+   - Demonstrates the extensibility of v4's architecture through custom hook logic
+   - Built natively for the UniChain ecosystem
+
+2. **Enhancing UniChain's DeFi Infrastructure**:
+   - Provides essential liquidity management tools for UniChain's growing DeFi ecosystem
+   - Improves capital efficiency of Uniswap v4 pools on UniChain
+   - Creates network effects through social coordination of liquidity providers
+
+3. **Innovation in AMM Design**:
+   - Introduces social coordination mechanisms to AMM liquidity provision
+   - Implements novel incentive structures through the "Rizz Factor"
+   - Demonstrates the potential of v4 hooks for creating more efficient markets
+
+4. **Community Focus**:
+   - Encourages active participation in UniChain's liquidity markets
+   - Creates a collaborative environment for liquidity providers
+   - Builds community around effective market making
 
 ## Contributing 🤝
 
