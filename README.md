@@ -5,6 +5,9 @@ A Uniswap v4 Hook that implements dynamic liquidity management based on pool act
 ## Architecture 📐
 ![Architecture Diagram](./architecture.png)
 
+## User Flow 🔄
+![User Flow Diagram](./userflow.png)
+
 ## Features 🚀
 
 - **Dynamic Liquidity Adjustment**: Automatically adjusts liquidity positions based on:
